@@ -116,59 +116,22 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // If all fields are valid, submit the form
         if (isNameValid && isEmailValid && isSubjectValid && isMessageValid) {
-            // Prepare form data for API submission
-            const formData = {
-                name: nameInput.value.trim(),
-                email: emailInput.value.trim(),
-                subject: subjectInput.value.trim(),
-                message: messageInput.value.trim()
-            };
+            // Normally you would send the form data to a server here
+            // For demonstration, we'll just show a success message
             
-            // Display loading message
-            formStatus.textContent = 'Sending your message...';
-            formStatus.classList.remove('success', 'error');
-            formStatus.classList.add('info');
+            // Show success message
+            formStatus.textContent = 'Thank you! Your message has been sent successfully.';
+            formStatus.classList.add('success');
             formStatus.style.display = 'block';
             
-            // Send data to the API endpoint
-            fetch('/api/contact', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(formData)
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    // Show success message
-                    formStatus.textContent = data.message || 'Thank you! Your message has been sent successfully.';
-                    formStatus.classList.remove('info', 'error');
-                    formStatus.classList.add('success');
-                    
-                    // Reset form
-                    contactForm.reset();
-                } else {
-                    // Show error message from API
-                    formStatus.textContent = data.error || 'Something went wrong. Please try again.';
-                    formStatus.classList.remove('info', 'success');
-                    formStatus.classList.add('error');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                formStatus.textContent = 'Network error. Please try again later.';
-                formStatus.classList.remove('info', 'success');
-                formStatus.classList.add('error');
-            })
-            .finally(() => {
-                // Scroll to the form status
-                formStatus.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            });
+            // Reset form
+            contactForm.reset();
+            
+            // Scroll to the form status
+            formStatus.scrollIntoView({ behavior: 'smooth', block: 'center' });
         } else {
             // Show error message
             formStatus.textContent = 'Please check the form for errors and try again.';
-            formStatus.classList.remove('info', 'success');
             formStatus.classList.add('error');
             formStatus.style.display = 'block';
         }
