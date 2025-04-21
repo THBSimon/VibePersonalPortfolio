@@ -693,6 +693,12 @@ section {
     display: block;
 }
 
+.form-status.info {
+    background-color: rgba(52, 152, 219, 0.2);
+    color: #3498db;
+    display: block;
+}
+
 /* ===== Footer ===== */
 .footer {
     background-color: var(--secondary-color);
