@@ -148,6 +148,10 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             
             const targetId = this.getAttribute('href');
+            
+            // Skip empty anchors or direct # links
+            if (targetId === '#') return;
+            
             const targetElement = document.querySelector(targetId);
             
             if (targetElement) {
