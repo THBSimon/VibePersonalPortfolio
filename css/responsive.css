@@ -1,0 +1,245 @@
+/*
+* Responsive Stylesheet
+* Author: John Doe
+* Version: 1.0
+*/
+
+/* ===== Media Queries ===== */
+
+/* Large Devices (Desktop) */
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .hero-title {
+        font-size: 4.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 2.2rem;
+    }
+    
+    .hero-image {
+        width: 35%;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 55%;
+    }
+    
+    .container {
+        max-width: 720px;
+    }
+    
+    /* Header & Navigation */
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: var(--white);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition);
+        z-index: 999;
+        gap: 4rem;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-link {
+        font-size: 2rem;
+    }
+    
+    /* Hero Section */
+    .hero {
+        height: auto;
+        padding: 15rem 0 10rem;
+    }
+    
+    .hero-content {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .hero-image {
+        display: none;
+    }
+    
+    /* About Section */
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-image {
+        max-width: 300px;
+        margin: 0 auto 4rem;
+    }
+    
+    /* Contact Section */
+    .contact-content {
+        flex-direction: column;
+    }
+    
+    .contact-info {
+        margin-bottom: 5rem;
+    }
+    
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        gap: 4rem;
+    }
+    
+    .footer-links, 
+    .footer-social {
+        text-align: center;
+    }
+    
+    .footer-links h3::after,
+    .footer-social h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .footer-links ul {
+        align-items: center;
+    }
+    
+    .footer-social .social-icons {
+        justify-content: center;
+    }
+}
+
+/* Small Devices (Mobile Landscape) */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+    
+    .container {
+        max-width: 540px;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 3.2rem;
+    }
+    
+    .hero-title {
+        font-size: 3.6rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 2rem;
+    }
+    
+    .btn {
+        padding: 1rem 2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto 3rem;
+    }
+    
+    .tab-header {
+        flex-wrap: wrap;
+    }
+    
+    .tab-btn {
+        padding: 1.5rem 1rem;
+    }
+    
+    .interest-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Extra Small Devices (Mobile Portrait) */
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
+    .section-title {
+        font-size: 2.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.6rem;
+    }
+    
+    .tab-content {
+        padding: 2rem;
+    }
+    
+    .tab-btn {
+        font-size: 1.4rem;
+    }
+    
+    .tab-btn i {
+        font-size: 2rem;
+    }
+    
+    .contact-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 2rem;
+    }
+    
+    .contact-card .icon {
+        margin: 0 0 1.5rem 0;
+        font-size: 3rem;
+    }
+    
+    .interest-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    .back-to-top {
+        right: 2rem;
+        bottom: 2rem;
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}

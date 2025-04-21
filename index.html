@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe | Personal Website</title>
+    <meta name="description" content="Personal website of John Doe - Web Developer, Designer, and Tech Enthusiast">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#home">
+                        <span class="logo-text">John Doe</span>
+                    </a>
+                </div>
+                <div class="menu-toggle" id="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#interests" class="nav-link">Interests</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hello, I'm <span class="highlight">John Doe</span></h1>
+                <div class="hero-subtitle">
+                    <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                </div>
+                <p class="hero-description">A passionate web developer and designer based in San Francisco, California.</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">About Me</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#3F72AF" d="M44.7,-76.4C58.8,-69.8,71.8,-59.6,79.6,-46.1C87.4,-32.7,90.1,-16.3,88.8,-0.7C87.6,14.9,82.3,29.7,74.1,43.2C65.9,56.7,54.7,68.7,41.2,76.5C27.7,84.2,13.8,87.7,-0.1,87.8C-14,88,-28.1,84.9,-42.1,78.3C-56.1,71.6,-70.2,61.5,-78.9,47.4C-87.6,33.3,-91,15.7,-89.9,-1.3C-88.8,-18.4,-83.2,-36.7,-73,-51.5C-62.9,-66.3,-48.3,-77.5,-33.3,-83.6C-18.3,-89.6,-3,-90.6,10.4,-86.9C23.8,-83.3,30.5,-83,44.7,-76.4Z" transform="translate(100 100)" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#F9D949" d="M48.2,-73.7C63.1,-66.1,76.8,-55.6,83.8,-41.7C90.9,-27.8,91.3,-10.5,87.9,5.1C84.5,20.7,77.5,34.4,67.3,45.1C57.1,55.8,43.7,63.4,29.7,71.2C15.6,79,-0.2,87,-15.5,85.8C-30.9,84.6,-45.8,74.3,-59.2,62.3C-72.5,50.3,-84.4,36.6,-87.4,21C-90.4,5.4,-84.5,-12.1,-76.9,-28C-69.4,-44,-60.3,-58.4,-47.3,-66.9C-34.2,-75.4,-17.1,-78,-0.5,-77.2C16.2,-76.4,32.3,-72.2,48.2,-73.7Z" transform="translate(100 100)" />
+                    </svg>
+                </div>
+                <div class="about-text">
+                    <h3>Who am I?</h3>
+                    <p>I'm a passionate web developer and designer with over 5 years of experience crafting beautiful, responsive websites and applications. I focus on creating intuitive user experiences that solve real problems.</p>
+                    
+                    <h3>My Journey</h3>
+                    <p>My journey in web development began during college where I discovered my passion for coding. Since then, I've worked with numerous clients across various industries, helping them establish their online presence and achieve their business goals.</p>
+                    
+                    <h3>My Skills</h3>
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="skill-name">HTML/CSS</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">Responsive Design</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">UI/UX Design</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="interests">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Interests</h2>
+                <p class="section-subtitle">Things I'm passionate about</p>
+            </div>
+            
+            <div class="tabs">
+                <div class="tab-header">
+                    <div class="tab-btn active" data-tab="coding">
+                        <i class="fas fa-code"></i>
+                        <span>Coding</span>
+                    </div>
+                    <div class="tab-btn" data-tab="photography">
+                        <i class="fas fa-camera"></i>
+                        <span>Photography</span>
+                    </div>
+                    <div class="tab-btn" data-tab="travel">
+                        <i class="fas fa-plane"></i>
+                        <span>Travel</span>
+                    </div>
+                    <div class="tab-btn" data-tab="music">
+                        <i class="fas fa-music"></i>
+                        <span>Music</span>
+                    </div>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="coding">
+                        <h3>Coding & Development</h3>
+                        <p>I'm passionate about writing clean, efficient code and staying updated with the latest web technologies. I enjoy building projects that solve real-world problems and contribute to open-source communities.</p>
+                        <div class="interest-icons">
+                            <span class="interest-icon"><i class="fab fa-html5"></i></span>
+                            <span class="interest-icon"><i class="fab fa-css3-alt"></i></span>
+                            <span class="interest-icon"><i class="fab fa-js"></i></span>
+                            <span class="interest-icon"><i class="fab fa-react"></i></span>
+                            <span class="interest-icon"><i class="fab fa-node-js"></i></span>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="photography">
+                        <h3>Photography</h3>
+                        <p>Photography allows me to see the world from different perspectives. I enjoy capturing landscapes, street scenes, and portraits that tell stories. This hobby helps me develop a better eye for design and composition in my web projects.</p>
+                        <div class="interest-gallery">
+                            <div class="gallery-item">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="100" height="100" fill="#DBE2EF"/>
+                                    <circle cx="70" cy="30" r="15" fill="#F9D949"/>
+                                    <path d="M0 70 L30 40 L50 60 L100 10 L100 100 L0 100 Z" fill="#3F72AF"/>
+                                </svg>
+                            </div>
+                            <div class="gallery-item">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="100" height="100" fill="#DBE2EF"/>
+                                    <circle cx="25" cy="25" r="15" fill="#F9D949"/>
+                                    <path d="M0 60 L25 35 L40 50 L100 0 L100 100 L0 100 Z" fill="#3F72AF"/>
+                                </svg>
+                            </div>
+                            <div class="gallery-item">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="100" height="100" fill="#DBE2EF"/>
+                                    <circle cx="80" cy="20" r="15" fill="#F9D949"/>
+                                    <path d="M0 80 L20 60 L40 80 L70 50 L100 80 L100 100 L0 100 Z" fill="#3F72AF"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="travel">
+                        <h3>Travel & Exploration</h3>
+                        <p>Traveling broadens my perspective and inspires creativity. I love experiencing different cultures, cuisines, and architectural styles. Each trip influences my design approach and problem-solving skills.</p>
+                        <div class="travel-map">
+                            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="300" height="200" fill="#DBE2EF"/>
+                                <path d="M30,50 Q60,20 90,50 T150,50 T210,50 T270,50" stroke="#112D4E" fill="none" stroke-width="2"/>
+                                <circle cx="30" cy="50" r="5" fill="#F9D949"/>
+                                <circle cx="90" cy="50" r="5" fill="#F9D949"/>
+                                <circle cx="150" cy="50" r="5" fill="#F9D949"/>
+                                <circle cx="210" cy="50" r="5" fill="#F9D949"/>
+                                <circle cx="270" cy="50" r="5" fill="#F9D949"/>
+                                <path d="M20,80 h260 v70 h-260 z" fill="#3F72AF" opacity="0.3"/>
+                                <path d="M40,100 l20,-15 l15,10 l25,-20 l20,15 l15,-10 l30,25 l25,-15 l20,10 l15,-5 l20,15 v50 h-205 z" fill="#112D4E" opacity="0.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="music">
+                        <h3>Music & Instruments</h3>
+                        <p>Music is my creative outlet. I play guitar and piano, and I enjoy exploring different genres. Music helps me find balance and inspiration for my technical work, and sometimes I compose melodies in my free time.</p>
+                        <div class="music-icons">
+                            <span class="music-icon"><i class="fas fa-guitar"></i></span>
+                            <span class="music-icon"><i class="fas fa-music"></i></span>
+                            <span class="music-icon"><i class="fas fa-headphones"></i></span>
+                            <span class="music-icon"><i class="fas fa-piano-keyboard"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Location</h3>
+                            <p>San Francisco, California</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Email</h3>
+                            <p>hello@johndoe.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h3>Connect with me</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send me a message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div id="formStatus" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">John Doe</span>
+                    <p>Web Developer & Designer</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#interests">Interests</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Me</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> John Doe. All Rights Reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/form-validation.js"></script>
+</body>
+</html>
