@@ -125,22 +125,37 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Intersection Observer for skills animation
+    // Skills animation
     const skillLevels = document.querySelectorAll('.skill-level');
     
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.width = entry.target.style.width;
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {threshold: 0.5});
+    // Function to animate skill bars when they are in viewport
+    function animateSkills() {
+        const skills = document.querySelector('.skills');
+        if (!skills) return;
+        
+        const skillsPosition = skills.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.3;
+        
+        if (skillsPosition < screenPosition) {
+            skillLevels.forEach(skill => {
+                const width = skill.getAttribute('data-width');
+                skill.style.width = width;
+            });
+        }
+    }
     
+    // Set initial width to 0 and store original width
     skillLevels.forEach(skill => {
-        skill.style.width = "0";
-        observer.observe(skill);
+        const originalWidth = skill.style.width;
+        skill.setAttribute('data-width', originalWidth);
+        skill.style.width = '0%';
     });
+    
+    // Call animation on scroll
+    window.addEventListener('scroll', animateSkills);
+    
+    // Call once on page load to check if skills are already in viewport
+    setTimeout(animateSkills, 500);
     
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
